@@ -1,25 +1,9 @@
 {
-  "mod_elements": [
-    {
-      "name": "Hello",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hello",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/randomcrazymod/advancements/hello.json"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "advancements.hello.title": "Hello",
-      "advancements.hello.descr": "hello"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
