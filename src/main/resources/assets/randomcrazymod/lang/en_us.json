@@ -1,4 +1,6 @@
 {
   "advancements.hello.title": "Hello",
-  "advancements.hello.descr": "hello"
+  "advancements.hello.descr": "hello",
+  "itemGroup.tabrandom_crazy": "Random Crazy",
+  "item.randomcrazymod.green_apple": "Green Apple"
 }

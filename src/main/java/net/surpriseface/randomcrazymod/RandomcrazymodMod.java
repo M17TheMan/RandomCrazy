@@ -16,6 +16,9 @@ package net.surpriseface.randomcrazymod;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.surpriseface.randomcrazymod.init.RandomcrazymodModTabs;
+import net.surpriseface.randomcrazymod.init.RandomcrazymodModItems;
+
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -45,8 +48,10 @@ public class RandomcrazymodMod {
 
 	public RandomcrazymodMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
+		RandomcrazymodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		RandomcrazymodModItems.REGISTRY.register(bus);
 
 	}
 

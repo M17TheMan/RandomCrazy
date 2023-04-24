@@ -11,6 +11,31 @@
           "src/main/resources/data/randomcrazymod/advancements/hello.json"
         ]
       }
+    },
+    {
+      "name": "RandomCrazy",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_crazy",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tabs"
+    },
+    {
+      "name": "GreenApple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_apple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/GreenAppleItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/green_apple.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -18,12 +43,23 @@
   "language_map": {
     "en_us": {
       "advancements.hello.title": "Hello",
-      "advancements.hello.descr": "hello"
+      "advancements.hello.descr": "hello",
+      "itemGroup.tabrandom_crazy": "Random Crazy",
+      "item.randomcrazymod.green_apple": "Green Apple"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Tabs",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "randomcrazymod",
