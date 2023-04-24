@@ -1,0 +1,46 @@
+{
+  "mod_elements": [
+    {
+      "name": "Hello",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/advancements/hello.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "advancements.hello.title": "Hello",
+      "advancements.hello.descr": "hello"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "randomcrazymod",
+    "modName": "RandomCrazyMod",
+    "version": "1.0.0",
+    "author": "Brenden Harnly, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.surpriseface.randomcrazymod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}
