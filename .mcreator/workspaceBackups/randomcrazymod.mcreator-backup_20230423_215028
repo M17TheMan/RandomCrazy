@@ -26,7 +26,6 @@
     {
       "name": "GreenApple",
       "type": "item",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_apple",
@@ -37,21 +36,6 @@
         ]
       },
       "path": "~/Items"
-    },
-    {
-      "name": "ChaosGem",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chaos_gem",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/randomcrazymod/models/item/chaos_gem.json",
-          "src/main/java/net/surpriseface/randomcrazymod/item/ChaosGemItem.java"
-        ]
-      },
-      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -59,7 +43,6 @@
   "language_map": {
     "en_us": {
       "advancements.hello.title": "Hello",
-      "item.randomcrazymod.chaos_gem": "Chaos Gem",
       "advancements.hello.descr": "hello",
       "itemGroup.tabrandom_crazy": "Random Crazy",
       "item.randomcrazymod.green_apple": "Green Apple"

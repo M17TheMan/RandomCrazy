@@ -5,6 +5,7 @@
 package net.surpriseface.randomcrazymod.init;
 
 import net.surpriseface.randomcrazymod.item.GreenAppleItem;
+import net.surpriseface.randomcrazymod.item.ChaosGemItem;
 import net.surpriseface.randomcrazymod.RandomcrazymodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -15,5 +16,6 @@ import net.minecraft.world.item.Item;
 
 public class RandomcrazymodModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, RandomcrazymodMod.MODID);
+	public static final RegistryObject<Item> CHAOS_GEM = REGISTRY.register("chaos_gem", () -> new ChaosGemItem());
 	public static final RegistryObject<Item> GREEN_APPLE = REGISTRY.register("green_apple", () -> new GreenAppleItem());
 }
