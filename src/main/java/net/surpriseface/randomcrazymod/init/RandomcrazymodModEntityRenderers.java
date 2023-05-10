@@ -4,6 +4,7 @@
  */
 package net.surpriseface.randomcrazymod.init;
 
+import net.surpriseface.randomcrazymod.client.renderer.SpeedyMushroomRenderer;
 import net.surpriseface.randomcrazymod.client.renderer.ScreamingMushroomRenderer;
 
 import net.minecraftforge.fml.common.Mod;
@@ -16,5 +17,6 @@ public class RandomcrazymodModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(RandomcrazymodModEntities.SCREAMING_MUSHROOM.get(), ScreamingMushroomRenderer::new);
+		event.registerEntityRenderer(RandomcrazymodModEntities.SPEEDY_MUSHROOM.get(), SpeedyMushroomRenderer::new);
 	}
 }

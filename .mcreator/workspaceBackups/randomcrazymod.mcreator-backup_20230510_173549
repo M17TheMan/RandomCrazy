@@ -363,7 +363,7 @@
       "name": "PumpkinPieSlice",
       "type": "item",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pumpkin_pie_slice",
       "metadata": {
@@ -481,6 +481,79 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPiePlace",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_place",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPiePlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPie2OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_2_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPie2OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],

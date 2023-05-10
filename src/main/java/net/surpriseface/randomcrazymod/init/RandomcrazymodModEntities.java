@@ -4,6 +4,7 @@
  */
 package net.surpriseface.randomcrazymod.init;
 
+import net.surpriseface.randomcrazymod.entity.SpeedyMushroomEntity;
 import net.surpriseface.randomcrazymod.entity.ScreamingMushroomEntity;
 import net.surpriseface.randomcrazymod.RandomcrazymodMod;
 
@@ -26,6 +27,10 @@ public class RandomcrazymodModEntities {
 			EntityType.Builder.<ScreamingMushroomEntity>of(ScreamingMushroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ScreamingMushroomEntity::new)
 
 					.sized(0.9f, 1.2000000000000002f));
+	public static final RegistryObject<EntityType<SpeedyMushroomEntity>> SPEEDY_MUSHROOM = register("speedy_mushroom",
+			EntityType.Builder.<SpeedyMushroomEntity>of(SpeedyMushroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpeedyMushroomEntity::new)
+
+					.sized(0.9f, 1.2000000000000002f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -35,11 +40,13 @@ public class RandomcrazymodModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ScreamingMushroomEntity.init();
+			SpeedyMushroomEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SCREAMING_MUSHROOM.get(), ScreamingMushroomEntity.createAttributes().build());
+		event.put(SPEEDY_MUSHROOM.get(), SpeedyMushroomEntity.createAttributes().build());
 	}
 }

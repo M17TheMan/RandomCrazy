@@ -11,6 +11,7 @@
   "item.randomcrazymod.chaos_gem": "Chaos Gem",
   "item.randomcrazymod.raw_chaos_gem": "Raw Chaos Gem",
   "advancements.hello.descr": "hello",
+  "item.randomcrazymod.speedy_mushroom_spawn_egg": "Screaming Mushroom Spawn Egg",
   "item.randomcrazymod.melon_armor_helmet": "Melon Helmet",
   "item.randomcrazymod.melon_armor_chestplate": "Melon Chestplate",
   "entity.randomcrazymod.screaming_mushroom": "Screaming Mushroom",
@@ -19,5 +20,6 @@
   "item.randomcrazymod.screaming_mushroom_spawn_egg": "Screaming Mushroom Spawn Egg",
   "item.randomcrazymod.pumpkin_pie_slice": "Pumpkin Pie Slice",
   "block.randomcrazymod.pumpkin_pie_3": "Pumpkin Pie",
+  "entity.randomcrazymod.speedy_mushroom": "Screaming Mushroom",
   "item.randomcrazymod.green_apple": "Green Apple"
 }

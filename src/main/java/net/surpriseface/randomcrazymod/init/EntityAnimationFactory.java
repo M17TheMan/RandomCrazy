@@ -1,5 +1,6 @@
 package net.surpriseface.randomcrazymod.init;
 
+import net.surpriseface.randomcrazymod.entity.SpeedyMushroomEntity;
 import net.surpriseface.randomcrazymod.entity.ScreamingMushroomEntity;
 
 import net.minecraftforge.fml.common.Mod;
@@ -12,6 +13,13 @@ public class EntityAnimationFactory {
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		if (event != null && event.getEntity() != null) {
 			if (event.getEntity() instanceof ScreamingMushroomEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SpeedyMushroomEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

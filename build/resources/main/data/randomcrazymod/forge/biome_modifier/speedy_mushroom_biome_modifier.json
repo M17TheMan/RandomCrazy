@@ -1,0 +1,29 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "warped_forest",
+    "mushroom_fields",
+    "forest",
+    "sparse_jungle",
+    "taiga",
+    "crimson_forest",
+    "flower_forest",
+    "lush_caves",
+    "mangrove_swamp",
+    "snowy_taiga",
+    "swamp",
+    "old_growth_birch_forest",
+    "grove",
+    "dark_forest",
+    "old_growth_pine_taiga",
+    "windswept_forest",
+    "jungle",
+    "old_growth_spruce_taiga"
+  ],
+  "spawners": {
+    "type": "randomcrazymod:speedy_mushroom",
+    "weight": 8,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

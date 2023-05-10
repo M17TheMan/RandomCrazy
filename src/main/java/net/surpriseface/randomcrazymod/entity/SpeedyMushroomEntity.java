@@ -30,6 +30,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
@@ -60,21 +61,21 @@ import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
-public class ScreamingMushroomEntity extends Monster implements IAnimatable {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ScreamingMushroomEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ScreamingMushroomEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ScreamingMushroomEntity.class, EntityDataSerializers.STRING);
+public class SpeedyMushroomEntity extends Monster implements IAnimatable {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(SpeedyMushroomEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(SpeedyMushroomEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SpeedyMushroomEntity.class, EntityDataSerializers.STRING);
 	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public ScreamingMushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(RandomcrazymodModEntities.SCREAMING_MUSHROOM.get(), world);
+	public SpeedyMushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(RandomcrazymodModEntities.SPEEDY_MUSHROOM.get(), world);
 	}
 
-	public ScreamingMushroomEntity(EntityType<ScreamingMushroomEntity> type, Level world) {
+	public SpeedyMushroomEntity(EntityType<SpeedyMushroomEntity> type, Level world) {
 		super(type, world);
 		xpReward = 10;
 		setNoAi(false);
@@ -86,7 +87,7 @@ public class ScreamingMushroomEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "screaming_mush");
+		this.entityData.define(TEXTURE, "speedy_mush");
 	}
 
 	public void setTexture(String texture) {
@@ -114,9 +115,10 @@ public class ScreamingMushroomEntity extends Monster implements IAnimatable {
 			}
 		});
 		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(6, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -174,7 +176,7 @@ public class ScreamingMushroomEntity extends Monster implements IAnimatable {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(RandomcrazymodModEntities.SCREAMING_MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(RandomcrazymodModEntities.SPEEDY_MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}
 
@@ -266,7 +268,7 @@ public class ScreamingMushroomEntity extends Monster implements IAnimatable {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(ScreamingMushroomEntity.RemovalReason.KILLED);
+			this.remove(SpeedyMushroomEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

@@ -42,6 +42,8 @@ public class RandomcrazymodModItems {
 	public static final RegistryObject<Item> PUMPKIN_PIE_2 = block(RandomcrazymodModBlocks.PUMPKIN_PIE_2, null);
 	public static final RegistryObject<Item> PUMPKIN_PIE_3 = block(RandomcrazymodModBlocks.PUMPKIN_PIE_3, null);
 	public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = REGISTRY.register("pumpkin_pie_slice", () -> new PumpkinPieSliceItem());
+	public static final RegistryObject<Item> SPEEDY_MUSHROOM_SPAWN_EGG = REGISTRY.register("speedy_mushroom_spawn_egg",
+			() -> new ForgeSpawnEggItem(RandomcrazymodModEntities.SPEEDY_MUSHROOM, -16724737, -16777216, new Item.Properties().tab(RandomcrazymodModTabs.TAB_RANDOM_CRAZY)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
