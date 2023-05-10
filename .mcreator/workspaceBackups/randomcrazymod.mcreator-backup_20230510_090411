@@ -345,6 +345,7 @@
     {
       "name": "PumpkinPie3",
       "type": "block",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pumpkin_pie_3",
@@ -354,6 +355,202 @@
           "src/main/resources/assets/randomcrazymod/blockstates/pumpkin_pie_3.json",
           "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_3.json",
           "src/main/resources/assets/randomcrazymod/models/block/pumpkin_pie_3.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PumpkinPieSlice",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_slice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/PumpkinPieSliceItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_slice.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PumpkinPie3OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_3_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPie3OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPieOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPieOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPie1OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_1_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPie1OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPiePlace",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_place",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPiePlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPie2OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_2_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPie2OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Blocks"
@@ -392,6 +589,7 @@
       "item.randomcrazymod.melon_flesh": "Melon Flesh",
       "itemGroup.tabrandom_crazy": "Random Crazy",
       "item.randomcrazymod.screaming_mushroom_spawn_egg": "Screaming Mushroom Spawn Egg",
+      "item.randomcrazymod.pumpkin_pie_slice": "Pumpkin Pie Slice",
       "block.randomcrazymod.pumpkin_pie_3": "Pumpkin Pie",
       "item.randomcrazymod.green_apple": "Green Apple"
     }
