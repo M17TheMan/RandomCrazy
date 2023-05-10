@@ -137,11 +137,6 @@ public class SpeedyMushroomEntity extends Monster implements IAnimatable {
 	}
 
 	@Override
-	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("randomcrazymod:mushroom_scream"));
-	}
-
-	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.fungus.step")), 0.15f, 1);
 	}

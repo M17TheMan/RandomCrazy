@@ -88,7 +88,7 @@
       "value": "Blocks.RED_MUSHROOM"
     },
     "livingSound": {
-      "value": "CUSTOM:mushroom_scream"
+      "value": ""
     },
     "hurtSound": {
       "value": "block.fungus.place"
