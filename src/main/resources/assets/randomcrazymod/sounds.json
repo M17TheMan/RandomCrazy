@@ -1,0 +1,20 @@
+{
+  "mushroom_scream": {
+    "category": "ambient",
+    "subtitle": "subtitles.mushroom_scream",
+    "sounds": [
+      {
+        "name": "randomcrazymod:mushroom_scream_1",
+        "stream": false
+      },
+      {
+        "name": "randomcrazymod:mushroom_scream_2",
+        "stream": false
+      },
+      {
+        "name": "randomcrazymod:mushroom_scream_3",
+        "stream": false
+      }
+    ]
+  }
+}

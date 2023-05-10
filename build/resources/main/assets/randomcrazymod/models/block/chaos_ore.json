@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "randomcrazymod:blocks/chaos_ore",
+    "up": "randomcrazymod:blocks/chaos_ore",
+    "north": "randomcrazymod:blocks/chaos_ore",
+    "east": "randomcrazymod:blocks/chaos_ore",
+    "south": "randomcrazymod:blocks/chaos_ore",
+    "west": "randomcrazymod:blocks/chaos_ore",
+    "particle": "randomcrazymod:blocks/chaosore_ore"
+  },
+  "render_type": "solid"
+}

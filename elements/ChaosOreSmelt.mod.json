@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 250,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:RawChaosGem"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:ChaosGem"
+    },
+    "name": "chaos_ore_smelt",
+    "namespace": "mod"
+  }
+}

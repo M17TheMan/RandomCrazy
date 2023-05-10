@@ -1,0 +1,9 @@
+{
+  "parent": "randomcrazymod:custom/pumpkin_pie_1",
+  "textures": {
+    "all": "randomcrazymod:blocks/pumpkin_pie",
+    "particle": "randomcrazymod:blocks/pumpkinpieparticle",
+    "0": "randomcrazymod:blocks/pumpkin_pie"
+  },
+  "render_type": "cutout_mipped"
+}

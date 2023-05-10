@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "randomcrazymod:block/pumpkin_pie_2"
+    },
+    "facing=east": {
+      "model": "randomcrazymod:block/pumpkin_pie_2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "randomcrazymod:block/pumpkin_pie_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "randomcrazymod:block/pumpkin_pie_2",
+      "y": 270
+    }
+  }
+}

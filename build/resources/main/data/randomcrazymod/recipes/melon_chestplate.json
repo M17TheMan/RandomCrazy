@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E E",
+    "MEG",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "randomcrazymod:melon_rind"
+    },
+    "M": {
+      "item": "minecraft:melon_slice"
+    },
+    "G": {
+      "item": "minecraft:glistering_melon_slice"
+    }
+  },
+  "result": {
+    "item": "randomcrazymod:melon_armor_chestplate",
+    "count": 1
+  }
+}

@@ -13,11 +13,16 @@
  */
 package net.surpriseface.randomcrazymod;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.surpriseface.randomcrazymod.init.RandomcrazymodModTabs;
+import net.surpriseface.randomcrazymod.init.RandomcrazymodModSounds;
 import net.surpriseface.randomcrazymod.init.RandomcrazymodModItems;
+import net.surpriseface.randomcrazymod.init.RandomcrazymodModEntities;
+import net.surpriseface.randomcrazymod.init.RandomcrazymodModBlocks;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -50,9 +55,12 @@ public class RandomcrazymodMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		RandomcrazymodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		RandomcrazymodModSounds.REGISTRY.register(bus);
+		RandomcrazymodModBlocks.REGISTRY.register(bus);
 		RandomcrazymodModItems.REGISTRY.register(bus);
+		RandomcrazymodModEntities.REGISTRY.register(bus);
 
+		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

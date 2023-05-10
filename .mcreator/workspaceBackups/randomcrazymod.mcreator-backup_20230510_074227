@@ -1,0 +1,512 @@
+{
+  "mod_elements": [
+    {
+      "name": "Hello",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/advancements/hello.json"
+        ]
+      }
+    },
+    {
+      "name": "RandomCrazy",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_crazy",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tabs"
+    },
+    {
+      "name": "GreenApple",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_apple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/GreenAppleItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/green_apple.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ChaosGem",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/item/chaos_gem.json",
+          "src/main/java/net/surpriseface/randomcrazymod/item/ChaosGemItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RawChaosGem",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_chaos_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/item/raw_chaos_gem.json",
+          "src/main/java/net/surpriseface/randomcrazymod/item/RawChaosGemItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ChaosOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/item/chaos_ore.json",
+          "src/main/resources/assets/randomcrazymod/blockstates/chaos_ore.json",
+          "src/main/resources/assets/randomcrazymod/models/block/chaos_ore.json",
+          "src/main/java/net/surpriseface/randomcrazymod/block/ChaosOreBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChaosOreSmelt",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/chaos_ore_smelt.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "ChaosOreBlast",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_ore_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/chaos_ore_blast.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "MelonArmor",
+      "type": "armor",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/MelonArmorItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/melon_armor_leggings.json",
+          "src/main/resources/assets/randomcrazymod/models/item/melon_armor_helmet.json",
+          "src/main/resources/assets/randomcrazymod/models/item/melon_armor_boots.json",
+          "src/main/resources/assets/randomcrazymod/models/item/melon_armor_chestplate.json"
+        ]
+      },
+      "path": "~/armor"
+    },
+    {
+      "name": "ScreamingMushroom",
+      "type": "animatedentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screaming_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/entity/model/ScreamingMushroomModel.java",
+          "src/main/resources/assets/randomcrazymod/models/item/screaming_mushroom_spawn_egg.json",
+          "src/main/java/net/surpriseface/randomcrazymod/entity/ScreamingMushroomEntity.java",
+          "src/main/resources/data/randomcrazymod/forge/biome_modifier/screaming_mushroom_biome_modifier.json",
+          "src/main/java/net/surpriseface/randomcrazymod/client/renderer/ScreamingMushroomRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "ScreamingMushroomOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screaming_mushroom_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/ScreamingMushroomOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ScreamingMushroomOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screaming_mushroom_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/ScreamingMushroomOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MelonHelmet",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/melon_helmet.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "MelonLeggings",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/melon_leggings.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "MelonChestplate",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/melon_chestplate.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "MelonBoots",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/randomcrazymod/recipes/melon_boots.json"
+        ]
+      },
+      "path": "~/recipies"
+    },
+    {
+      "name": "MelonFlesh",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_flesh",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/item/melon_flesh.json",
+          "src/main/java/net/surpriseface/randomcrazymod/item/MelonFleshItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MelonRind",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_rind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/MelonRindItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/melon_rind.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PumpkinPie",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/block/pumpkin_pie.json",
+          "src/main/resources/assets/randomcrazymod/blockstates/pumpkin_pie.json",
+          "src/main/java/net/surpriseface/randomcrazymod/block/PumpkinPieBlock.java",
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PumpkinPie1",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_1.json",
+          "src/main/resources/assets/randomcrazymod/models/block/pumpkin_pie_1.json",
+          "src/main/java/net/surpriseface/randomcrazymod/block/PumpkinPie1Block.java",
+          "src/main/resources/assets/randomcrazymod/blockstates/pumpkin_pie_1.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PumpkinPie2",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/block/PumpkinPie2Block.java",
+          "src/main/resources/assets/randomcrazymod/models/block/pumpkin_pie_2.json",
+          "src/main/resources/assets/randomcrazymod/blockstates/pumpkin_pie_2.json",
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_2.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PumpkinPie3",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/block/PumpkinPie3Block.java",
+          "src/main/resources/assets/randomcrazymod/blockstates/pumpkin_pie_3.json",
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_3.json",
+          "src/main/resources/assets/randomcrazymod/models/block/pumpkin_pie_3.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PumpkinPieSliceRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_slice_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/procedures/PumpkinPieSliceRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PumpkinPieSlice",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_pie_slice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/surpriseface/randomcrazymod/item/PumpkinPieSliceItem.java",
+          "src/main/resources/assets/randomcrazymod/models/item/pumpkin_pie_slice.json"
+        ]
+      },
+      "path": "~/Items"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "mushroom_scream",
+      "files": [
+        "mushroom_scream_1",
+        "mushroom_scream_2",
+        "mushroom_scream_3"
+      ],
+      "category": "ambient",
+      "subtitle": "mushroom screams"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "advancements.hello.title": "Hello",
+      "item.randomcrazymod.melon_armor_leggings": "Melon Leggings",
+      "item.randomcrazymod.melon_rind": "Melon Rind",
+      "block.randomcrazymod.pumpkin_pie_2": "Pumpkin Pie",
+      "subtitles.mushroom_scream": "mushroom screams",
+      "block.randomcrazymod.pumpkin_pie_1": "Pumpkin Pie",
+      "block.randomcrazymod.chaos_ore": "Chaos Ore",
+      "block.randomcrazymod.pumpkin_pie": "Pumpkin Pie",
+      "item.randomcrazymod.melon_armor_boots": "Melon Boots",
+      "item.randomcrazymod.chaos_gem": "Chaos Gem",
+      "item.randomcrazymod.raw_chaos_gem": "Raw Chaos Gem",
+      "advancements.hello.descr": "hello",
+      "item.randomcrazymod.melon_armor_helmet": "Melon Helmet",
+      "item.randomcrazymod.melon_armor_chestplate": "Melon Chestplate",
+      "entity.randomcrazymod.screaming_mushroom": "Screaming Mushroom",
+      "item.randomcrazymod.melon_flesh": "Melon Flesh",
+      "itemGroup.tabrandom_crazy": "Random Crazy",
+      "item.randomcrazymod.screaming_mushroom_spawn_egg": "Screaming Mushroom Spawn Egg",
+      "item.randomcrazymod.pumpkin_pie_slice": "Pumpkin Pie Slice",
+      "block.randomcrazymod.pumpkin_pie_3": "Pumpkin Pie",
+      "item.randomcrazymod.green_apple": "Green Apple"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Tabs",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Other",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "recipies",
+        "children": []
+      },
+      {
+        "name": "armor",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "randomcrazymod",
+    "modName": "RandomCrazyMod",
+    "version": "1.0.0",
+    "author": "Brenden Harnly, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "playeranimator",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.surpriseface.randomcrazymod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

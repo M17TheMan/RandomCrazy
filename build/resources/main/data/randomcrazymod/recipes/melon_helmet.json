@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "E E",
+    "STS"
+  ],
+  "key": {
+    "E": {
+      "item": "randomcrazymod:melon_rind"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "randomcrazymod:melon_armor_helmet",
+    "count": 1
+  }
+}

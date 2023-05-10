@@ -1,7 +1,23 @@
 {
   "advancements.hello.title": "Hello",
+  "item.randomcrazymod.melon_armor_leggings": "Melon Leggings",
+  "item.randomcrazymod.melon_rind": "Melon Rind",
+  "block.randomcrazymod.pumpkin_pie_2": "Pumpkin Pie",
+  "subtitles.mushroom_scream": "mushroom screams",
+  "block.randomcrazymod.pumpkin_pie_1": "Pumpkin Pie",
+  "block.randomcrazymod.chaos_ore": "Chaos Ore",
+  "block.randomcrazymod.pumpkin_pie": "Pumpkin Pie",
+  "item.randomcrazymod.melon_armor_boots": "Melon Boots",
   "item.randomcrazymod.chaos_gem": "Chaos Gem",
+  "item.randomcrazymod.raw_chaos_gem": "Raw Chaos Gem",
   "advancements.hello.descr": "hello",
+  "item.randomcrazymod.melon_armor_helmet": "Melon Helmet",
+  "item.randomcrazymod.melon_armor_chestplate": "Melon Chestplate",
+  "entity.randomcrazymod.screaming_mushroom": "Screaming Mushroom",
+  "item.randomcrazymod.melon_flesh": "Melon Flesh",
   "itemGroup.tabrandom_crazy": "Random Crazy",
+  "item.randomcrazymod.screaming_mushroom_spawn_egg": "Screaming Mushroom Spawn Egg",
+  "item.randomcrazymod.pumpkin_pie_slice": "Pumpkin Pie Slice",
+  "block.randomcrazymod.pumpkin_pie_3": "Pumpkin Pie",
   "item.randomcrazymod.green_apple": "Green Apple"
 }
